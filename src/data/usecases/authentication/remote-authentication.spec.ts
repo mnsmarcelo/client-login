@@ -7,7 +7,7 @@ import { AccountModel } from 'src/domain/models';
 type SutTypes = {
   sut: RemoteAuthentication,
   httpClientSpy: HttpClientSpy<AccountModel>,
-}
+};
 
 const makeSut = (url: string = faker.internet.url()): SutTypes => {
   const httpClientSpy = new HttpClientSpy<AccountModel>();
@@ -15,8 +15,8 @@ const makeSut = (url: string = faker.internet.url()): SutTypes => {
   return {
     sut,
     httpClientSpy,
-  }
-}
+  };
+};
 
 describe('RemoteAuthentication', () => {
   test('Should call HttpClient with correct values', async () => {

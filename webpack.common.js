@@ -1,11 +1,6 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-console.log({
-  alias: {
-    'src': path.join(__dirname, 'src'),
-  }
-})
 module.exports = {
   entry: './src/main/index.tsx',
   output: {

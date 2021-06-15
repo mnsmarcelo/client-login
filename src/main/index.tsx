@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Login from 'src/presentation/pages/login/login';
+import 'src/presentation/styles/global.scss';
 
 ReactDOM.render(
-  <h1>Test</h1>,
+  <Login />,
   document.getElementById('main'),
 );

@@ -1,4 +1,6 @@
 import React from 'react';
+import Input from 'src/presentation/components/input';
+
 import Styles from './login-styles.scss';
 
 const Login = () => (
@@ -7,18 +9,16 @@ const Login = () => (
       <div className={Styles.wrapLogin}>
         <form className={Styles.loginForm}>
           <h3 className={Styles.loginTitle}>Welcome</h3>
-          <div className={Styles.inputWrap}>
-            <input type="text" id="name" placeholder=" " />
-            <label htmlFor="name">
-              E-mail
-            </label>
-          </div>
-          <div className={Styles.inputWrap}>
-            <input type="password" id="password" placeholder=" " />
-            <label htmlFor="password">
-              Password
-            </label>
-          </div>
+          <Input
+            placeholder="E-mail"
+            type="email"
+            name="email"
+          />
+          <Input
+            placeholder="Senha"
+            type="password"
+            name="password"
+          />
           <div>
             <button type="button">
               Login

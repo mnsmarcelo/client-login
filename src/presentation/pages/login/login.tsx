@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from 'src/presentation/components/input';
+import Loader from 'src/presentation/components/loader';
 
 import Styles from './login-styles.scss';
 
@@ -25,6 +26,9 @@ const Login = () => (
             </button>
           </div>
         </form>
+        <div className={Styles.loader}>
+          <Loader />
+        </div>
       </div>
     </div>
   </div>

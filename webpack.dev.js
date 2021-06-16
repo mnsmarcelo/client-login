@@ -22,6 +22,13 @@ module.exports = merge(common, {
       }, {
         loader: 'sass-loader',
       }],
+    }, {
+      test: /\.(gif)$/i,
+      use: [
+        {
+          loader: 'file-loader',
+        },
+      ],
     }],
   },
   devtool: 'inline-source-map',

@@ -10,7 +10,7 @@
     ],
     "esModuleInterop": true,
     "moduleResolution": "Node",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "baseUrl": "./",
     "allowJs": true,
     "resolveJsonModule": true,
